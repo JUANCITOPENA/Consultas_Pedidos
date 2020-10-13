@@ -1,0 +1,198 @@
+body {
+    background-color: #f1c40f;
+}
+
+h1 {
+    width: 350px;
+    margin: 10px auto;
+    text-align: center;
+    color: black;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#formContainer {
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgb(0, 0, 0, 24), 0 17px 50px 0 rgb(0, 0, 0, 19);
+    width: 35%;
+    height: 320px;
+    margin: 10px auto;
+}
+
+#header {
+    width: 100%;
+    height: 15px;
+    background: black;
+}
+
+#Email {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#email {
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 25px auto;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+#password {
+    width: 70%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+#signUp {
+    background-color: #fffa65;
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 54px;
+}
+
+#signIn {
+    background-color: #32ff7e;
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 12px;
+}
+
+#signOut {
+    background-color: #ff4d4d;
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgb(0, 0, 0, 24), 0 17px 50px 0 rgb(0, 0, 0, 19);
+}
+
+.botoncerrar {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+    #formContainer {
+        background-color: white;
+        box-shadow: 0 12px 16px 0 rgb(0, 0, 0, 24), 0 17px 50px 0 rgb(0, 0, 0, 19);
+        width: 98%;
+        height: 320px;
+        margin: 20px auto;
+    }
+    #signUp {
+        background-color: #fffa65;
+        color: black;
+        border: none;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin-top: 20px;
+        margin-left: 54px;
+    }
+    #signIn {
+        background-color: #32ff7e;
+        color: black;
+        border: none;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin-left: 12px;
+    }
+    #signOut {
+        background-color: #ff4d4d;
+        color: black;
+        border: none;
+        font-weight: bold;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin-top: 12px;
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 414px) and (min-width: 375px) {
+    #formContainer {
+        background-color: white;
+        box-shadow: 0 12px 16px 0 rgb(0, 0, 0, 24), 0 17px 50px 0 rgb(0, 0, 0, 19);
+        width: 98%;
+        height: 320px;
+        margin: 10px auto;
+    }
+}
+
+
+/* 
+@media only screen and (max-width: 667px) and (min-width: 320px) {
+    #formContainer {
+        background-color: white;
+        box-shadow: 0 12px 16px 0 rgb(0, 0, 0, 24), 0 17px 50px 0 rgb(0, 0, 0, 19);
+        width: 98%;
+        height: 320px;
+        margin: 10px auto;
+    }
+} */
