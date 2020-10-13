@@ -59,7 +59,6 @@ auth.onAuthStateChanged(function(user) {
 
         //window.close("index.html")
 
-        //window.open("reporte.html")
         //auth.signIn();
         // window.close("index.html")
         //Take user to a different or home page`
