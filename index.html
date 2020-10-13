@@ -1,75 +1,37 @@
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-var firebaseConfig = {
-    apiKey: "AIzaSyDW1_aj-GxYGuL29Pc-rT9yvw2rjqNjaZ0",
-    authDomain: "fleet-coyote-234300.firebaseapp.com",
-    databaseURL: "https://fleet-coyote-234300.firebaseio.com",
-    projectId: "fleet-coyote-234300",
-    storageBucket: "fleet-coyote-234300.appspot.com",
-    messagingSenderId: "252704891926",
-    appId: "1:252704891926:web:5ad134713fb9129afd0137",
-    measurementId: "G-QDJXTD25FT"
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+<!DOCTYPE html>
+<html lang="en">
 
-// Initialize Firebase
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro y Login Ver Pedidos</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
 
-const auth = firebase.auth();
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
 
-function signUp() {
+    <script src="appfirebase.js"></script>
+    <link rel="stylesheet" href="stye.css">
 
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
+</head>
 
-    const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
-    promise.catch(e => alert("Escriba una Direccion y/o contraseña Valida"));
+<body>
+    <img src="img/logo.png" alt="logo">
 
-}
+    <h1>Registro y Login</h1>
 
-function signIn() {
+    <div id="formContainer">
+        <div id="header"></div>
+        <input type="email" placeholder="email" id="email" name="Email" />
+        <input type="password" placeholder="password" id="password" name="Password" />
 
-    var email = document.getElementById("email");
-    var password = document.getElementById("password");
+        <button onclick="signUp()" id="signUp">Registrar</button>
+        <button onclick="signIn()" id="signIn">Ingresar</button>
+        <button onclick="signOut()" id="signOut">Cerrar</button>
+    </div>
 
-    const promise = auth.signInWithEmailAndPassword(email.value, password.value);
-    promise.catch(e => alert("Escriba una Direccion y/o contraseña Valida"));
+</body>
 
-}
-
-function signOut() {
-
-    auth.signOut();
-    alert("Cerrar Seccion");
-
-}
-
-auth.onAuthStateChanged(function(user) {
-
-    if (user) {
-
-
-
-
-        var email = user.email;
-        alert("Inicio de Seccion Correcto! " + email);
-
-        window.open("https://app.powerbi.com/view?r=eyJrIjoiYjJmNWNmZjktZjRkOC00MzMxLWEyOTQtNDdkMGRhYmY4MzdjIiwidCI6IjZkZjY3NDI4LTMwYzYtNDk3Ny1iMTIxLWY1OWZlM2FjZjdhMCIsImMiOjJ9")
-
-        //window.close("index.html")
-
-        //auth.signIn();
-        // window.close("index.html")
-        //Take user to a different or home page`
-
-        //is signed in
-
-    } else {
-
-        alert("Usuario no Activo");
-        //no user is signed in
-    }
-
-
-});
+</html>
