@@ -55,7 +55,7 @@ auth.onAuthStateChanged(function(user) {
         var email = user.email;
         alert("Inicio de Seccion Correcto! " + email);
 
-        window.open("https://app.powerbi.com/view?r=eyJrIjoiYjJmNWNmZjktZjRkOC00MzMxLWEyOTQtNDdkMGRhYmY4MzdjIiwidCI6IjZkZjY3NDI4LTMwYzYtNDk3Ny1iMTIxLWY1OWZlM2FjZjdhMCIsImMiOjJ9")
+        window.open("https://app.powerbi.com/view?r=eyJrIjoiODBiOGY3Y2MtZTg1OC00NTc4LTkyNGYtMmVmMWFlZTUyMzgzIiwidCI6IjMwOTE4NjllLTFiNWMtNDlhNy1iZWQwLTA1ODJiMjBlYzg0NSIsImMiOjJ9")
 
         //window.close("index.html")
 
